@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2024 V4.8 (1.0)" package="org.disd.gecf" android:installLocation="internalOnly" android:versionCode="83">
+	<uses-sdk android:minSdkVersion="26" android:targetSdkVersion="33" />
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true" android:label="GECF.Android" android:usesCleartextTraffic="true"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+	<uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.BIND_SCREENING_SERVICE" />
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="http" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="https" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.SENDTO" />
+			<data android:scheme="mailto" />
+		</intent>
+	</queries>
+</manifest>

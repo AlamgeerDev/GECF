@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+    <!-- Login page static  resources--> 
+        
+    <data name="login_hint" xml:space="preserve">
+        <value>Username</value>
+        </data>
+    <data name="password_hint" xml:space="preserve">
+        <value>Password </value>
+        </data>
+     <data name="logo_text" xml:space="preserve">
+        <value>Mobile</value>
+        </data>
+    <data name="checknetwork" xml:space="preserve">
+        <value>Please check your Network Connectivity.</value>
+        </data> 
+    <data name="error" xml:space="preserve">
+        <value>Error</value>
+        </data>
+    <data name="ok" xml:space="preserve">
+        <value>OK</value>
+        </data>
+    
+    <data name="exception" xml:space="preserve">
+         <value>Exception:</value>
+        </data>
+    <data name="reset_password" xml:space="preserve">
+         <value>Reset Password</value>
+        </data>
+    
+    <data name="remember_password" xml:space="preserve">
+         <value>Remember Password?</value>
+        </data> 
+    <data name="login123" xml:space="preserve">
+         <value>Login</value>
+        </data>
+    <data name="login" xml:space="preserve">
+         <value>Login</value>
+        </data>
+    
+      <data name="GECF" xml:space="preserve">
+        <value>GECF</value>
+    </data>
+    
+     <!-- Home page static  resources--> 
+     <data name="home_news" xml:space="preserve">
+        <value>News</value>
+    </data>
+     <data name="home_prices" xml:space="preserve">
+        <value>Prices</value>
+    </data>
+     <data name="home_statistics" xml:space="preserve">
+        <value>Statistics</value>
+    </data>
+     <data name="home_research" xml:space="preserve">
+        <value>Research</value>
+    </data>
+     <data name="date" xml:space="preserve">
+        <value>Date</value>
+    </data>
+     <data name="oil_Party" xml:space="preserve">
+        <value>Oil Parity</value>
+    </data> 
+    <data name="nea" xml:space="preserve">
+        <value>NEA</value>
+    </data>
+     <data name="nbp" xml:space="preserve">
+        <value>NBP</value>
+    </data>
+     <data name="swe" xml:space="preserve">
+        <value>SWE</value>
+    </data>
+     <data name="hh" xml:space="preserve">
+        <value>HH</value>
+    </data>
+     <data name="Japan_lt" xml:space="preserve">
+        <value>Japan Lt</value>
+    </data>
+     <data name="opec" xml:space="preserve">
+        <value>OPEC</value>
+    </data>
+     <data name="brent" xml:space="preserve">
+        <value>Brent</value>
+    </data>
+
+
+    <data name="oilindex1" xml:space="preserve">
+        <value>OilIdx-1 </value>
+    </data>
+
+    <data name="oilindex2" xml:space="preserve">
+        <value>OilIdx-2</value>
+    </data>
+
+    <data name="ttf" xml:space="preserve">
+        <value>TTF</value>
+    </data>
+
+    <data name="jkmlsf" xml:space="preserve">
+        <value>JKM</value>
+    </data>
+
+    <data name="aeco" xml:space="preserve">
+        <value>AECO</value>
+    </data>
+
+    <!-- Help page static  resources--> 
+    
+     <data name="help" xml:space="preserve">
+        <value>Help &amp; Support </value>
+    </data>
+    
+     <data name="please_send_feedback" xml:space="preserve">
+        <value>If you are facing any difficulty with the mobile app, please send email us to:</value>
+    </data>
+    
+     <data name="it_helpdesk" xml:space="preserve">
+        <value>IT.Helpdesk@gecf.org</value>
+    </data>
+    
+    <!-- Contact Us page static  resources--> 
+    
+    <data name="contact" xml:space="preserve">
+        <value>Contact Us &#x0a;  &#x0a;  &#x0a; Data and Information Service Department &#x0a; IT.Helpdesk@gecf.org</value>
+    </data>
+       <data name="contact_us_address" xml:space="preserve">
+        <value>P.O.Box 23753, Tornado Tower, 47th &amp; 48th Floors, West Bay, Doha</value>
+      </data>
+    
+     <data name="telephone" xml:space="preserve">
+        <value>Contact Us at +974 4404 8419</value>
+      </data>
+      <data name="fax" xml:space="preserve">
+        <value>Fax: +974 4404 8415</value>
+      </data>
+    
+    
+<!-- about page static  resources-->    
+     <data name="about_us" xml:space="preserve">
+        <value>About Us</value>
+      </data>
+    
+    <data name="about_us_text" xml:space="preserve">
+        <value>GECF Overview
+
+The Gas Exporting Countries Forum (GECF) is an international governmental organization which provides the framework for exchanging experience and information among Member Countries. GECF is a gathering of the world’s leading gas producers and was set up as international governmental organization with the objective to increase the level of coordination and strengthen the collaboration among Member countries.
+
+GECF also seeks to build a mechanism for a more meaningful dialogue between gas producers and gas consumers for the sake of stability and security of supply and demand in global natural gas markets.
+
+In accordance with the GECF Statute, the organization is aiming to support the sovereign rights of its Members over their natural gas resources and their abilities to develop, preserve and use such resources for the benefit of their peoples, through the exchange of experience, views, information and coordination in gas-related matters.        
+
+The Member countries of the Forum are: Algeria, Bolivia, Egypt, Equatorial Guinea, Iran, Libya, Nigeria, Qatar, Russia, Trinidad and Tobago, United Arab Emirates and Venezuela. Azerbaijan, Angola,Iraq, Kazakhstan, Malaysia, Mozambique, Norway and Peru have the status of Observer Members.
+
+With the current number of Members the GECF has a strong position on the world gas market and among international energy organizations. Its potential rests on the enormous natural gas reserves of the Member Countries all together accumulating more than 70% of the world proven natural gas reserves.
+
+The Forum highly values this potential of its Member Countries and Observer Members, and at the same time is looking forward to further increase in their numbers and welcomes new members that share the common interests and objectives of the Forum’s Statute.</value>
+      </data> 
+    
+    
+    <!-- NewsIcons page static  resources--> 
+    
+     <data name="news" xml:space="preserve">
+        <value>News</value>
+      </data>
+    
+       
+    <!-- StatisticsIcons page static  resources--> 
+    
+     <data name="statistics" xml:space="preserve">
+        <value>Statistics</value>
+      </data>
+    
+     <!-- ResearchIcons page static  resources--> 
+    
+     <data name="research" xml:space="preserve">
+        <value>Research</value>
+      </data>
+    
+      <!-- NewsList pages static  resources--> 
+    
+     <data name="priceNews" xml:space="preserve">
+        <value>Price News</value>
+      </data>
+    
+    
+     <data name="supply_DemandNews" xml:space="preserve">
+        <value>Supply &amp; Demand News</value>
+      </data>
+   
+    
+     <data name="transportationNews" xml:space="preserve">
+        <value>Transportation &amp; Storage News</value>
+      </data>
+     
+    
+     <data name="policyNews" xml:space="preserve">
+        <value>Policy &amp; Regulation News</value>
+      </data>
+    
+    <data name="economicsNews" xml:space="preserve">
+        <value>Economics &amp; Geopolitics News</value>
+      </data>
+    
+    <data name="technologyNews" xml:space="preserve">
+        <value>Technology News</value>
+      </data>
+    
+    <data name="environmentNews" xml:space="preserve">
+        <value>Environment News</value>
+      </data>
+    
+    <data name="tradeNews" xml:space="preserve">
+        <value>Trade News</value>
+      </data>
+    
+    <data name="assesmentNews" xml:space="preserve">
+        <value>Assets &amp; Investment News</value>
+      </data>
+    
+     <data name="priceCommentryNews" xml:space="preserve">
+        <value>Price Commentary News</value>
+      </data>
+    
+     <data name="todaysNews" xml:space="preserve">
+        <value>Todays News</value>
+      </data>
+    
+     <data name="listNews" xml:space="preserve">
+        <value>List (15 days) News</value>
+      </data>
+    
+     <data name="hydrogenNews" xml:space="preserve">
+        <value>Hydrogen News</value>
+      </data>
+    
+      <!-- Settings page static  resources--> 
+    
+     <data name="settings" xml:space="preserve">
+        <value>Settings</value>
+      </data>
+    
+     <data name="number_of_lines" xml:space="preserve">
+        <value>Number of lines in news excerpt</value>
+      </data>
+    
+     <data name="version" xml:space="preserve">
+        <value>Version 1.3</value>
+      </data>
+    
+     <!-- StatisticalReports page static  resources--> 
+    
+     <data name="statisticalReports" xml:space="preserve">
+        <value>Statistical Reports</value>
+      </data>
+     <data name="monthly" xml:space="preserve">
+        <value>Monthly </value>
+      </data>
+     <data name="quarterly" xml:space="preserve">
+        <value>Quarterly</value>
+      </data>
+     <data name="annual" xml:space="preserve">
+        <value>Annual</value>
+      </data>
+     <data name="report_tyoe" xml:space="preserve">
+        <value>Report Type</value>
+      </data>
+    
+      <!--Gas Market Reports page static  resources--> 
+    
+     <data name="gasMarketReports" xml:space="preserve">
+        <value>Gas Market Reports</value>
+      </data>
+    
+     <!--GECF Outlooks page static  resources--> 
+    
+     <data name="outlookReports" xml:space="preserve">
+        <value>Outlook Reports</value>
+      </data>
+    
+      <!-- >Member Countries page static  resources--> 
+    
+     <data name="member_countries" xml:space="preserve">
+        <value>Member Countries</value>
+      </data>
+    
+    
+      <!-- >Observer Countries page static  resources--> 
+    
+     <data name="observer_countries" xml:space="preserve">
+        <value>Observer Countries</value>
+      </data>
+    
+    
+      <!-- >NonGECF Countries page static  resources--> 
+    
+     <data name="nonGECF_countries" xml:space="preserve">
+        <value>Non GECF Countries/Regions List</value>
+      </data>
+    
+     <!-- >Expert Commentaries page static  resources--> 
+    
+     <data name="expert_Commentaries" xml:space="preserve">
+        <value>Expert Commentaries</value>
+      </data>
+    
+    
+      <!-- >Definitions page static  resources--> 
+    
+     <data name="definitions" xml:space="preserve">
+        <value>Definitions List</value>
+      </data>
+    
+     <!-- >Search page static  resources--> 
+    
+     <data name="search" xml:space="preserve">
+        <value>Search</value>
+      </data>
+    
+      <data name="search_keyword" xml:space="preserve">
+        <value>Search Keyword</value>
+      </data>
+    
+      <data name="region" xml:space="preserve">
+        <value>Region</value>
+      </data>
+    
+      <data name="country" xml:space="preserve">
+        <value>Country/Region</value>
+      </data>
+    
+     <data name="category" xml:space="preserve">
+        <value>Category</value>
+      </data>
+    
+     <data name="fromDate" xml:space="preserve">
+        <value>From date</value>
+      </data>
+    
+     <data name="toDate" xml:space="preserve">
+        <value>To date</value>
+      </data>
+    
+     <data name="maxresult_count" xml:space="preserve">
+        <value>Max Result Count(Default:25)</value>
+      </data>
+</root>
+</root>
+
