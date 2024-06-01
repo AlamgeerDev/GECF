@@ -57,7 +57,5 @@
 	<string>mailto</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
-	<key>Custom Property</key>
-	<string></string>
 </dict>
 </plist>

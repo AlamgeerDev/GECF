@@ -1,4 +1,5 @@
-﻿using GECF.CustomRenderers;
+﻿using CommunityToolkit.Maui;
+using GECF.CustomRenderers;
 using GECF.Interfaces;
 //using GECF.Platforms.Android.DependencyServices;
 using Microsoft.Extensions.Logging;
@@ -13,7 +14,8 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
-			.UseMauiApp<App>()
+            .UseMauiCommunityToolkit()
+            .UseMauiApp<App>()
 			.UseMauiCompatibility()
             .ConfigureFonts(fonts =>
 			{
@@ -37,9 +39,15 @@ public static class MauiProgram
 
 #if ANDROID
         DependencyService.Register<IDialogService, GECF.Platforms.Android.DependencyServices.DialogServices>();
+        DependencyService.Register<ICloseApplication, GECF.Platforms.Android.DependencyServices.CloseApplication>();
+        DependencyService.Register<IFileService, GECF.Platforms.Android.DependencyServices.FileService>();
+        DependencyService.Register<IScreenShotService, GECF.Platforms.Android.DependencyServices.ScreenshotService>();
         //builder.Services.AddSingleton<IDialogService,GECF.Platforms.Android.DependencyServices. DialogServices>();
 #elif IOS
 		DependencyService.Register<IDialogService, GECF.Platforms.iOS.DependencyServices.DialogServices>();
+		//DependencyService.Register<IScreenshotService, GECF.Platforms.iOS.DependencyServices.ScreenshotService>();
+		DependencyService.Register<IFileService, GECF.Platforms.iOS.DependencyServices.FileService>();
+		
 
 #endif
 

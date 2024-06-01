@@ -4,6 +4,11 @@
         <name>GECF</name>
     </assembly>
     <members>
+        <member name="M:GECF.Platforms.Android.DependencyServices.CloseApplication.closeApplication">
+            <summary>
+            Closes the application.
+            </summary>
+        </member>
         <member name="M:GECF.Platforms.Android.DependencyServices.DialogServices.HideLoading">
             <summary>
             Hides the loading.
@@ -219,6 +224,132 @@
             </summary>
             <param name="url"></param>
         </member>
+        <member name="F:GECF.ViewModel.HomePageViewModel._IsProgressBarVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HomePageViewModel._isNewsStackVisible">
+            <summary>
+            News Stack Visible Property
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HomePageViewModel._isPricesStackVisible">
+            <summary>
+            Price stack Visible Property
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HomePageViewModel._isStatisticsStackVisible">
+            <summary>
+            Statistics stack Visible Property
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HomePageViewModel._isResearchStackVisible">
+            <summary>
+            Research stack Visible Property
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HomePageViewModel._isEnabled">
+            <summary>
+            Button Property
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.PricesNewsCommand">
+            <summary>
+            PricesNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.PolicyAndRegulationCommand">
+            <summary>
+            PolicyAndRegulationNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.EconomicsAndGeopoliticsCommand">
+            <summary>
+            EconomicsAndGeopoliticsNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.TechnologyCommand">
+            <summary>
+            TechnologyNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.SupplyamdDemandNewsCommand">
+            <summary>
+            SupplyamdDemandNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.EnvironmentNewsCommand">
+            <summary>
+            EnvironmentNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.TradeNewsCommand">
+            <summary>
+            TradeNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.AssetsAndInvestmentNewsCommand">
+            <summary>
+            AssetsAndInvestmentNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.PriceCommentaryNewsCommand">
+            <summary>
+            PriceCommentarymentNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.TodaysNewsCommand">
+            <summary>
+            TodaysNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.ListNewsCommand">
+            <summary>
+            ListNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.TransportNewsCommand">
+            <summary>
+             TransportNews Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.NewsCommand">
+            <summary>
+            News Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.PricesCommand">
+            <summary>
+            Prices Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.StatisticsCommand">
+            <summary>
+            Statistics Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.ResearchCommand">
+             <summary>
+             Reserch Command
+             </summary>
+            
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.NewsNavCommand">
+            <summary>
+            News Navigation Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.StatisticsNavCommand">
+            <summary>
+            Statistics Navigation Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.HomePageViewModel.ResearchNavCommand">
+            <summary>
+            Research Navigation Command
+            </summary>
+        </member>
         <member name="P:GECF.ViewModel.LoginPageViewModel.TestCommand">
             <summary>
             test command for action
@@ -288,6 +419,105 @@
             <summary>
             isf there is anty error
             </summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
         </member>
     </members>
 </doc>

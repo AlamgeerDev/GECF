@@ -1,35 +1,30 @@
 ﻿using GECF.Resources;
+using GECF.ViewModel;
 
 namespace GECF.Views;
 
 public partial class InAppBrowsePage : ContentPage
 {
-    private WebView webView;
-    private Button backButton;
-    public InAppBrowsePage(string URL)
+    private WebView webView1;
+    InAppBrowsePageViewModel vm;
+    public InAppBrowsePage(string url)
     {
         InitializeComponent();
-        this.Title = AppResources.GECF;
-        var layout = new StackLayout();
-        layout.Orientation = StackOrientation.Vertical;
-        if (Device.RuntimePlatform == Device.Android)
-        {
-            NavigationPage.SetHasNavigationBar(this, false);
-        }
-        //WebView needs to be given a height and width request within layouts to render
-        backButton = new Button() { Text = "Back", TextColor = Colors.Red, WidthRequest = 80, HeightRequest = 50, BackgroundColor = Colors.Transparent };
-        webView = new WebView() { Margin = 100, WidthRequest = 1000, HeightRequest = 1000, Source = URL };
-        layout.Children.Add(backButton);
-        layout.Children.Add(webView);
-        Content = layout;
-
-
+        BindingContext = vm = new InAppBrowsePageViewModel(Navigation);
+        webView1 = new WebView() { WidthRequest = 800, HeightRequest = 800, Source = url };
+        stack.Children.Add(webView1);
+        activity_Indicator.IsVisible = true;
+        webView1.IsVisible = false;
+        webView1.Navigated += (sender, e) => {
+            activity_Indicator.IsVisible = false;
+            webView1.IsVisible = true;
+        };
     }
+
     public void Eval(String js)
     {
-        webView.Navigated += (o, s) =>
-        {
-            webView.Eval(js);
+        webView1.Navigated += (o, s) => {
+            webView1.Eval(js);
         };
     }
 }

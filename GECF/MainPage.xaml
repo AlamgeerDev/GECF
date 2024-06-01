@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GECF.MainPage">
 
-    <ScrollView>
+    <!--<ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -36,7 +36,7 @@
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
 
 </ContentPage>
 

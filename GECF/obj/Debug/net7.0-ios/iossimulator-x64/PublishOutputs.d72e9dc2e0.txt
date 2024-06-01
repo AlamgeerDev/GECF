@@ -1,6 +1,8 @@
 /Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/icudt.dat
 /Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/Acr.UserDialogs.dll
 /Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/BTProgressHUD.dll
+/Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/CommunityToolkit.Maui.dll
+/Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/CommunityToolkit.Maui.Core.dll
 /Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/Microsoft.Extensions.Configuration.dll
 /Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/shahrukhsaifi/GECF/GECF/bin/Debug/net7.0-ios/iossimulator-x64/publish/../GECF.app/Microsoft.Extensions.DependencyInjection.dll

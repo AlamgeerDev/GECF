@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -185,6 +189,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -254,6 +262,10 @@
             "Acr.UserDialogs": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

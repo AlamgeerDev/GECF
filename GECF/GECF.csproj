@@ -60,6 +60,7 @@
 		<PackageReference Include="Acr.UserDialogs" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Plugin.Connectivity" Version="1.0.2" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -87,6 +88,7 @@
 	  <None Remove="Utility\" />
 	  <None Remove="Platforms\iOS\DependencyServices\" />
 	  <None Remove="Platforms\Android\DependencyServices\" />
+	  <None Remove="Resources\Images\backm.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <InterfaceDefinition Include="Resources\GECFLaunchScreen.storyboard" />

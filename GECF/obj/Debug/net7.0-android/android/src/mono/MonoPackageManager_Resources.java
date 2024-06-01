@@ -10,6 +10,8 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Essentials.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",

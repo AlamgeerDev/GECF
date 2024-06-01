@@ -2,12 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GECF.Views.InAppBrowsePage"
+             BackgroundImageSource="bg_back"
              xmlns:control="clr-namespace:GECF.CustomViews"
              xmlns:user="clr-namespace:GECF.Effects"
-             Title="InAppBrowsePage">
-    <StackLayout Orientation="Vertical" x:Name="stack" Spacing="0">
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="True">
+    <StackLayout Orientation="Vertical" x:Name="stack" Spacing="0"
+                 VerticalOptions="FillAndExpand">
             <BoxView HeightRequest="10" BackgroundColor="#043687"
-                     IsVisible="{OnPlatform Android=false, iOS=true}"/>
+                     IsVisible="{OnPlatform Android=true, iOS=true}"/>
 
         <StackLayout VerticalOptions="Start" MinimumHeightRequest="80">
           <control:TabBar MinimumHeightRequest="90"/>   

@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GECF.Views.HomePage"
+             xmlns:side="clr-namespace:SideMenu;assembly=SideMenu"
+              xmlns:converters="clr-namespace:GECF.Converters"
+             xmlns:appResources="clr-namespace:GECF.Resources"
+             xmlns:user="clr-namespace:GECF.Effects"
+             xmlns:customRenderer1="clr-namespace:GECF.Platforms.Android.DependencyServices"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="True"
+             xmlns:indicator="clr-namespace:GECF.CustomViews"
+             BackgroundImageSource="bg_back.jpg"
+             Title="SIDE MENU SAMPLE"
+             BackgroundColor="#43BAE6"
+             x:Name="Page">
+    <ContentPage.Resources>
+              <converters:BoolToBackgroundColorConverter x:Key="BoolToBackgroundColor"/>
+              <converters:BoolToTextColorConverter x:Key="BoolToTextColor"/>
+              <converters:BoolToBorderValueConverter x:Key="BoolToBorderValue"/>
+              <converters:InverseVisibilityConverter x:Key="InverseVisibilityConverter"/>
+ </ContentPage.Resources>
+    <StackLayout x:Name="SideMenu" Margin="0,-4,0,0"  HeightRequest="600">
+        <!--MainView
+                   <ScrollView AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" Margin="0,0,0,0" Orientation="Vertical" VerticalScrollBarVisibility="Never">-->
+        <ScrollView BackgroundColor="#43BAE6">
+
+          <AbsoluteLayout x:Name="view" HeightRequest="1050" BackgroundColor ="White">
+
+            <Image Source="bg_back.png"  HorizontalOptions="FillAndExpand" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 1"/>
+
+            <!-- Menu icon in Android -->
+               <StackLayout  AbsoluteLayout.LayoutBounds="1,1,1,1" IsVisible="{OnPlatform Android=true, iOS=false}" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent">
+
+                             <StackLayout  HorizontalOptions="End" Orientation="Vertical">
+                                 <Image  WidthRequest="90" HeightRequest="90" HorizontalOptions="FillAndExpand" Source="menu_icon.jpg">
+                              <Image.GestureRecognizers>
+                                  <TapGestureRecognizer Tapped="OnLeftButtonClicked" />
+                              </Image.GestureRecognizers>
+                              </Image>
+                          </StackLayout>
+                     </StackLayout>
+    
+              <!-- Menu Icon For iOS-->
+                            <StackLayout Orientation="Horizontal"
+                                         Padding="0,0,0,0"
+                                         IsVisible="{OnPlatform Android=false, iOS=true}"
+                                         Margin="0,10,-10,0"
+                                         AbsoluteLayout.LayoutFlags="WidthProportional"
+                                         AbsoluteLayout.LayoutBounds="0, 0, 1, -1">
+                                 
+               
+                                <Button
+                                        ImageSource="menu_icon.png"
+                                        WidthRequest="90"
+                                        HeightRequest="90"
+                                        VerticalOptions="Start"
+                                        HorizontalOptions="EndAndExpand"
+                                        Clicked="OnLeftButtonClicked" />
+                            </StackLayout>
+
+            
+              <!-- search icon in ios -->
+                             <StackLayout Orientation="Horizontal"
+                                         Padding="0,0,0,0"
+                                         Margin="0,10,-10,0"
+                                          IsVisible="{OnPlatform Android=false, iOS=true}">
+               
+                                <Button
+                                        ImageSource="search.png"
+                                        WidthRequest="90"
+                                        HeightRequest="90"
+                                        VerticalOptions="Start"
+                                        HorizontalOptions="Start"
+                                        Clicked="OnSearchButtonClicked" />
+                            </StackLayout>
+
+              <!-- search icon in android -->
+                  <StackLayout  BackgroundColor="Transparent" IsVisible="{OnPlatform Android=true, iOS=false}">
+                       
+                                 <StackLayout  HorizontalOptions="End" Orientation="Vertical">
+                                     <Image  WidthRequest="90" HeightRequest="90" HorizontalOptions="FillAndExpand" Source="search.jpg">
+                                  <Image.GestureRecognizers>
+                                      <TapGestureRecognizer Tapped="OnSearchButtonClicked" />
+                                  </Image.GestureRecognizers>
+                                  </Image>
+            
+
+                              </StackLayout>
+                         </StackLayout>
+                   <!--Main Page views-->
+             <!--start of main content stacklayout -->
+     <StackLayout  Orientation="Vertical" Margin="0,75,0,0" Padding="0,0,0,0"  AbsoluteLayout.LayoutFlags="All"
+                         AbsoluteLayout.LayoutBounds="1, 0, 1, 1">
+
+              <!--GECF logo-->
+                          <Image HorizontalOptions="Center" Margin="0,10,0,0" WidthRequest="70" Source="logo_white"/>
+              <!--GECF news Title-->
+              <Label Text="GECF News"  FontFamily="museo500" TextColor="White" HorizontalOptions="Start" Margin="10,0,0,0"/>             
+                <CarouselView HeightRequest="140" HorizontalOptions="FillAndExpand"
+                             Margin="0,10,0,0" x:Name="carouselna" HorizontalScrollBarVisibility="Never"
+                             Scrolled="carouselna_Scrolled"
+                             Position="{Binding Position, Mode=TwoWay}" 
+                             ItemsSource="{Binding NewsListing}">                  
+                 <CarouselView.ItemTemplate>    
+                 <DataTemplate>    
+                   <StackLayout BackgroundColor="#86C8E0" Opacity="0.8">
+                       <Label FontSize="18" FontAttributes="Bold" FontFamily="museo500" HeightRequest="60" HorizontalTextAlignment="Center" Text="{Binding title}" Margin="30,20,30,0" TextColor="White" HorizontalOptions="Center" MaxLines="3" LineBreakMode="TailTruncation"/>
+                       <Label Text="{Binding date}" Margin="10,0,0,0" FontFamily="museo500" TextColor="White" VerticalOptions="End" HorizontalOptions="Center"/>
+                       <StackLayout.GestureRecognizers>
+                          <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                       </StackLayout.GestureRecognizers>
+                   </StackLayout>
+                 </DataTemplate>    
+               </CarouselView.ItemTemplate>    
+              </CarouselView>
+              <Grid WidthRequest="70" HeightRequest="20" ColumnSpacing="5"  HorizontalOptions="Center">
+                  <Grid.ColumnDefinitions>
+                       <ColumnDefinition Width="1*"/>
+                       <ColumnDefinition Width="1*"/>
+                       <ColumnDefinition Width="1*"/>
+                       <ColumnDefinition Width="1*"/>
+                       <ColumnDefinition Width="1*"/>
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="10"/>
+                  </Grid.RowDefinitions>
+                  <Button BackgroundColor="Orange" Grid.Row="0" x:Name="first"  Grid.Column="0" CornerRadius="5"/>
+                  <Button BackgroundColor="White"  Grid.Row="0" x:Name="second" Grid.Column="1" CornerRadius="5"/>
+                  <Button BackgroundColor="White"  Grid.Row="0" x:Name="third"  Grid.Column="2" CornerRadius="5"/>
+                  <Button BackgroundColor="White"  Grid.Row="0" x:Name="fourth" Grid.Column="3" CornerRadius="5"/>
+                  <Button BackgroundColor="White"  Grid.Row="0" x:Name="fifth"  Grid.Column="4" CornerRadius="5"/>
+              </Grid>
+
+              <!--start of scrolling buttons stack-->
+              <ScrollView Orientation="Horizontal" HorizontalOptions="Center" HorizontalScrollBarVisibility="Never">
+                 <StackLayout Orientation="Horizontal" HeightRequest="35">
+                       <Button Command="{Binding NewsCommand}"       FontFamily="museo500" FontAttributes="Bold" Margin="5,0,0,0"  BackgroundColor="{Binding IsNewsStackVisible,Converter={StaticResource BoolToBackgroundColor}}" Text="{x:Static appResources:AppResources.home_news}" BorderWidth="{Binding IsNewsStackVisible,Converter={StaticResource BoolToBorderValue}}" TextColor="{Binding IsNewsStackVisible,Converter={StaticResource BoolToTextColor}}" CornerRadius="20" WidthRequest="100" BorderColor="#42A9E4"/>
+                       <Button Command="{Binding PricesCommand}"     FontFamily="museo500" FontAttributes="Bold" BackgroundColor="{Binding IsPricesStackVisible,Converter={StaticResource BoolToBackgroundColor}}" Text="{x:Static appResources:AppResources.home_prices}" BorderWidth="{Binding IsPricesStackVisible,Converter={StaticResource BoolToBorderValue}}" TextColor="{Binding IsPricesStackVisible,Converter={StaticResource BoolToTextColor}}" CornerRadius="20" WidthRequest="100" BorderColor="#42A9E4"/>
+                       <Button Command="{Binding StatisticsCommand}" FontFamily="museo500" FontAttributes="Bold" BackgroundColor="{Binding IsStatisticsStackVisible,Converter={StaticResource BoolToBackgroundColor}}" Text="{x:Static appResources:AppResources.home_statistics}" BorderWidth="{Binding IsStatisticsStackVisible,Converter={StaticResource BoolToBorderValue}}" TextColor="{Binding IsStatisticsStackVisible,Converter={StaticResource BoolToTextColor}}" CornerRadius="20" WidthRequest="100" BorderColor="#42A9E4"/>
+                       <Button Command="{Binding ResearchCommand}"   FontFamily="museo500" FontAttributes="Bold" Margin="0,0,20,0" BackgroundColor="{Binding IsResearchStackVisible,Converter={StaticResource BoolToBackgroundColor}}" Text="{x:Static appResources:AppResources.home_research}" BorderWidth="{Binding IsResearchStackVisible,Converter={StaticResource BoolToBorderValue}}" TextColor="{Binding IsResearchStackVisible,Converter={StaticResource BoolToTextColor}}" CornerRadius="20" WidthRequest="100" BorderColor="#42A9E4"/>
+                 </StackLayout>
+               </ScrollView>
+              <!--End of scrolling buttons stack-->
+
+
+
+              <!--start of tabs -->
+              <StackLayout x:Name="NewsStack" HeightRequest="375" IsVisible="{Binding IsNewsStackVisible}" Orientation="Vertical" VerticalOptions="FillAndExpand">
+                  
+              <Grid Margin="15,0,15,10" RowSpacing="5" ColumnSpacing="5" BackgroundColor="Transparent">  
+              <Grid.RowDefinitions>  
+                <RowDefinition Height="125"/>  
+                <RowDefinition Height="125"/>
+                <RowDefinition Height="125"/>
+                <RowDefinition Height="125"/>
+              </Grid.RowDefinitions>  
+              <Grid.ColumnDefinitions>  
+                <ColumnDefinition Width="*"/>  
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>  
+                <ColumnDefinition Width="*"/>  
+              </Grid.ColumnDefinitions>  
+              <ImageButton Source="cat_1.png"  
+                   Grid.Row="0"
+                           IsEnabled="{Binding IsEnabled}"
+                   Command="{Binding NewsNavCommand}"
+                   CommandParameter="1"  
+                   Grid.Column="0"
+                   BackgroundColor="Transparent"
+                   >  
+ 
+            </ImageButton>
+
+           <ImageButton Source="cat_2.png"  
+                  Grid.Row="0"  
+                  Grid.Column="1"
+                        IsEnabled="{Binding IsEnabled}"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="2"
+                  BackgroundColor="Transparent"
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+           <ImageButton Source="cat_3.png"  
+                  Grid.Row="0"  
+                  Grid.Column="2"
+                          IsEnabled="{Binding IsEnabled}"
+                  BackgroundColor="Transparent"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="3"  
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+            
+            </ImageButton>
+
+            <ImageButton Source="cat_4.png"  
+                  Grid.Row="0"  
+                  Grid.Column="3"
+                           IsEnabled="{Binding IsEnabled}"
+                   BackgroundColor="Transparent"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="4"  
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">
+        
+            </ImageButton>
+
+            <ImageButton Source="cat_5.png"  
+                   Grid.Row="1"
+                     BackgroundColor="Transparent"
+                   Grid.Column="0"
+                           IsEnabled="{Binding IsEnabled}"
+                   Command="{Binding NewsNavCommand}"
+                   CommandParameter="5"  
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+            <ImageButton Source="cat_7.png"  
+                   Grid.Row="1"  
+                   Grid.Column="1"
+                           IsEnabled="{Binding IsEnabled}"
+                   BackgroundColor="Transparent"
+                   Command="{Binding NewsNavCommand}"
+                   CommandParameter="6"  
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+             <ImageButton Source="cat_8.png"  
+                   Grid.Row="1"
+                            IsEnabled="{Binding IsEnabled}"
+                     BackgroundColor="Transparent"
+                   Grid.Column="2"
+                   Command="{Binding NewsNavCommand}"
+                   CommandParameter="7"  
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">  
+               
+            </ImageButton>
+
+
+             <ImageButton Source="cat_9.png"  
+                   Grid.Row="1"  
+                   Grid.Column="3"
+                            IsEnabled="{Binding IsEnabled}"
+                     BackgroundColor="Transparent"
+                   Command="{Binding NewsNavCommand}"
+                   CommandParameter="8"  
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">
+
+               
+            </ImageButton>
+
+
+              <ImageButton Source="cat_10.png"  
+                   Grid.Row="2"  
+                   Grid.Column="0"
+                             IsEnabled="{Binding IsEnabled}"
+                     BackgroundColor="Transparent"
+                   Command="{Binding NewsNavCommand}"
+                   CommandParameter="9"  
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">
+
+              
+
+            </ImageButton>
+
+           <ImageButton Source="cat_11.png"  
+                  Grid.Row="2"  
+                  Grid.Column="1"
+                          IsEnabled="{Binding IsEnabled}"
+                     BackgroundColor="Transparent"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="10"  
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">
+
+        
+
+            </ImageButton>
+
+           <ImageButton Source="cat_12.png"  
+                  Grid.Row="2"  
+                  Grid.Column="3"
+                          IsEnabled="{Binding IsEnabled}"
+                     BackgroundColor="Transparent"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="11"  
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">
+             
+
+            </ImageButton>
+
+            <ImageButton Source="cat_13.png"  
+                  Grid.Row="3"  
+                  Grid.Column="0"
+                           IsEnabled="{Binding IsEnabled}"
+                 BackgroundColor="Transparent"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="12"  
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">
+                
+             
+            </ImageButton>
+            <ImageButton Source="cat_14.png"  
+                  Grid.Row="2"  
+                  Grid.Column="2"
+                           IsEnabled="{Binding IsEnabled}"
+                 BackgroundColor="Transparent"
+                  Command="{Binding NewsNavCommand}"
+                  CommandParameter="13"  
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">
+                
+             
+            </ImageButton>
+             <!--Enf of news Grid-->
+            </Grid>
+                  <!--Enf of news Stack-->
+              </StackLayout>
+
+
+
+
+              <!-- start of price stack & Grid-->
+              <StackLayout x:Name="PriceStack" HeightRequest="375" IsVisible="{Binding IsPricesStackVisible}" Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="0,0,0,30">
+             
+                          <!--<Grid x:Name="gridLayout" Margin="15,0,15,10" RowSpacing="5" ColumnSpacing="5" BackgroundColor="Transparent"></Grid>-->
+                      <user:LoadingIndicator
+                                        x:Name="activity_Indicator"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="Center"
+                                       IsLoading="True"
+                                       IsVisible="{Binding IsProgressBarVisible}"
+                                       LoadingIndicatorColor="White"
+                                       TextColor="White"
+                                       TextFontSize="8" />          
+                           <ScrollView Orientation="Horizontal"  IsVisible="{Binding IsProgressBarVisible,Converter={StaticResource InverseVisibilityConverter}}" >
+                               <StackLayout Orientation="Vertical" >                    
+                                  <Grid Margin="0,0,15,0" BackgroundColor="White">  
+                                <Grid.RowDefinitions>  
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions>  
+                                <Grid.ColumnDefinitions>  
+                                    <ColumnDefinition Width="80"/>  
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>  
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>  
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                 <!--    <ColumnDefinition Width="80"/> -->
+
+                                    <!-- New Prices 2022 -->
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="0"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.date}"
+                                      Padding="10"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+   
+                                </Label>
+
+                                <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="1"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.oil_Party}"
+                                     FontFamily="museo500"
+                                    FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="2"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.nea}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+ 
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="3"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.swe}"
+                                       FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+
+                                    <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="4"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.nbp}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="5"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.hh}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="6"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.Japan_lt}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="7"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.brent}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+<!--
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="8"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.opec}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                     </Label>
+                                      -->
+
+                                      <!-- New Prices 2022 -->
+
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="8"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.oilindex1}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                     </Label>
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="9"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.oilindex2}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                     </Label>
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="10"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.ttf}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                     </Label>
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="11"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.jkmlsf}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                     </Label>
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="12"
+                                      TextColor="Orange"
+                                      Text="{x:Static appResources:AppResources.aeco}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="White"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                     </Label>
+
+
+
+
+                                 <!--Enf of price header Grid-->
+                                </Grid>
+                                      <!--Enf of price header Scrollview-->
+
+                           <ListView BackgroundColor="Transparent" HeightRequest="300"  ItemsSource="{Binding Prices}" Margin="0,0,0,10">
+                           <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                       <Grid Margin="0,0,15,10" BackgroundColor="Transparent">  
+                                <Grid.RowDefinitions>  
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions>  
+                                <Grid.ColumnDefinitions>  
+                                    <ColumnDefinition Width="80"/>  
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>  
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>  
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                  <!--  <ColumnDefinition Width="80"/> -->
+
+
+                                    <!-- New Prices 2022 -->
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="0"
+                                      TextColor="White"
+                                      Text="{Binding date}"
+                                      Padding="10"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+
+                                <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="1"
+                                      TextColor="White"
+                                      Text="{Binding Oil_Parity}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="2"
+                                      TextColor="White"
+                                      Text="{Binding NEA}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+ 
+                                   <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="3"
+                                      TextColor="White"
+                                      Text="{Binding SWE}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+
+                                    <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="4"
+                                      TextColor="White"
+                                      Text="{Binding NBP}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="5"
+                                      TextColor="White"
+                                      Text="{Binding HH}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="6"
+                                      TextColor="White"
+                                      Text="{Binding Japan_LT}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+                                     <Label
+                                      Grid.Row="0"  
+                                      Grid.Column="7"
+                                      TextColor="White"
+                                      Text="{Binding Brent}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+              
+                                </Label>
+<!-- 
+                                     <Label 
+
+                                      Grid.Row="0"  
+                                      Grid.Column="8"
+                                      TextColor="White"
+                                      Text="{Binding opec}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+                   
+                                </Label>
+
+                                           -->
+
+                                           <!-- New Prices 2022 -->
+
+                                <Label 
+
+                                      Grid.Row="0"  
+                                      Grid.Column="8"
+                                      TextColor="White"
+                                      Text="{Binding oilindex_1}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+                   
+                                </Label>
+
+                                <Label 
+
+                                      Grid.Row="0"  
+                                      Grid.Column="9"
+                                      TextColor="White"
+                                      Text="{Binding oilindex_2}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+                   
+                                </Label>
+
+                                <Label 
+
+                                      Grid.Row="0"  
+                                      Grid.Column="10"
+                                      TextColor="White"
+                                      Text="{Binding ttf}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+                   
+                                </Label>
+
+                                <Label 
+
+                                      Grid.Row="0"  
+                                      Grid.Column="11"
+                                      TextColor="White"
+                                      Text="{Binding jkm}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+                   
+                                </Label>
+
+                                <Label 
+
+                                      Grid.Row="0"  
+                                      Grid.Column="12"
+                                      TextColor="White"
+                                      Text="{Binding aeco}"
+                                      FontFamily="museo500"
+                                      FontAttributes="Bold"
+                                      VerticalTextAlignment="Center"
+                                      HorizontalTextAlignment="Center"
+                                      HorizontalOptions="FillAndExpand"
+                                      BackgroundColor="Transparent"
+                                      VerticalOptions="FillAndExpand">  
+                   
+                                </Label>
+
+
+                
+                                 <!--Enf of price header Grid-->
+                                </Grid>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                                  <Button Text="See More..." HorizontalOptions="Start" TextColor="Orange" FontFamily="museo500" FontSize="16" BackgroundColor="Transparent" WidthRequest="150" VerticalOptions="Start"  HeightRequest="50" Margin="20,0,0,0" Command="{Binding PricesNavCommand}"/>
+
+                               </StackLayout>
+
+
+                           </ScrollView>
+
+                   
+
+
+
+                  </StackLayout>
+              <!--Enf of price stack-->
+
+
+            <StackLayout x:Name="StatisticsStack" IsVisible="{Binding IsStatisticsStackVisible}" Orientation="Vertical" VerticalOptions="FillAndExpand">
+
+
+
+           <Grid Margin="15,0,15,10" RowSpacing="5" ColumnSpacing="5" BackgroundColor="Transparent">  
+            <Grid.RowDefinitions>  
+                <RowDefinition Height="125"/>  
+                <RowDefinition Height="125"/>
+            </Grid.RowDefinitions>  
+            <Grid.ColumnDefinitions>  
+                <ColumnDefinition Width="*"/>  
+                <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>  
+                <ColumnDefinition Width="*"/>  
+            </Grid.ColumnDefinitions>
+
+
+            <ImageButton Source="stat_3.png"  
+                   Grid.Row="0"  
+                   Grid.Column="0"
+                 BackgroundColor="Transparent"
+                          IsEnabled="{Binding IsEnabled}"
+                   Command="{Binding StatisticsNavCommand}"
+                   CommandParameter="1"      
+                   >  
+              
+            </ImageButton>  
+           <ImageButton Source="stat_4.png"  
+                  Grid.Row="0"  
+                  Grid.Column="1"
+                 BackgroundColor="Transparent"
+                         IsEnabled="{Binding IsEnabled}"
+                  Command="{Binding StatisticsNavCommand}"
+                  CommandParameter="2"      
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+           <ImageButton Source="stat_2.png"  
+                  Grid.Row="0"  
+                  Grid.Column="2"
+                 BackgroundColor="Transparent"
+                         IsEnabled="{Binding IsEnabled}"
+                  Command="{Binding StatisticsNavCommand}"
+                  CommandParameter="3"      
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+            <ImageButton Source="stat_1.png"  
+                  Grid.Row="0"  
+                  Grid.Column="3"
+                 BackgroundColor="Transparent"
+                          IsEnabled="{Binding IsEnabled}"
+                  Command="{Binding StatisticsNavCommand}"
+                  CommandParameter="4"
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+            <ImageButton Source="stat_5.png"  
+                   Grid.Row="1"  
+                   Grid.Column="0"
+                 BackgroundColor="Transparent"
+                          IsEnabled="{Binding IsEnabled}"
+                   Command="{Binding StatisticsNavCommand}"
+                   CommandParameter="5"       
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">  
+               
+            </ImageButton>  
+            <ImageButton Source="stat_6.png"  
+                   Grid.Row="1"  
+                   Grid.Column="1"
+                 BackgroundColor="Transparent"
+                          IsEnabled="{Binding IsEnabled}"
+                   Command="{Binding StatisticsNavCommand}"
+                   CommandParameter="6"      
+                   HorizontalOptions="FillAndExpand"  
+                   VerticalOptions="FillAndExpand">  
+               
+            </ImageButton>
+          
+
+             <!--Enf of statistics Grid-->
+            </Grid>
+                  </StackLayout>
+
+            <StackLayout x:Name="ResearchStack" IsVisible="{Binding IsResearchStackVisible}" Orientation="Vertical" VerticalOptions="FillAndExpand">
+
+
+         <Grid Margin="15,0,15,10" RowSpacing="5" ColumnSpacing="5" BackgroundColor="Transparent">  
+            <Grid.RowDefinitions>  
+                <RowDefinition Height="125"/>  
+               
+            </Grid.RowDefinitions>  
+            <Grid.ColumnDefinitions>  
+                <ColumnDefinition Width="*"/>  
+                <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>  
+                <ColumnDefinition Width="*"/>  
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Source="res_1.png"  
+                   Grid.Row="0"  
+                   Grid.Column="0"
+                          IsEnabled="{Binding IsEnabled}"
+                 BackgroundColor="Transparent"
+                   Command="{Binding ResearchNavCommand}"
+                   CommandParameter="1"             
+                   >  
+              
+            </ImageButton>
+
+           <ImageButton Source="res_2.png"  
+                  Grid.Row="0"  
+                  Grid.Column="1"
+                         IsEnabled="{Binding IsEnabled}"
+                 BackgroundColor="Transparent"
+                  Command="{Binding ResearchNavCommand}"
+                  CommandParameter="2"       
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+           <ImageButton Source="res_3.png"  
+                  Grid.Row="0"  
+                  Grid.Column="2"
+                         IsEnabled="{Binding IsEnabled}"
+                 BackgroundColor="Transparent"
+                  Command="{Binding ResearchNavCommand}"
+                  CommandParameter="3"       
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+            <ImageButton Source="res_4.png"  
+                  Grid.Row="0"  
+                  Grid.Column="3"
+                          IsEnabled="{Binding IsEnabled}"
+                 BackgroundColor="Transparent"
+                  Command="{Binding ResearchNavCommand}"
+                  CommandParameter="4"                   
+                  HorizontalOptions="FillAndExpand"  
+                  VerticalOptions="FillAndExpand">  
+              
+            </ImageButton>
+
+           
+
+             <!--Enf of Research Grid-->
+            </Grid>
+                  </StackLayout>
+                                 
+                 <!--End of main stack-->
+          </StackLayout>
+
+
+         <!--End of main view-->
+        </AbsoluteLayout>
+       </ScrollView>
+
+
+        <!--LeftMenu
+        <ScrollView side:SideMenuView.Place="LeftMenu"
+                    side:SideMenuView.MenuWidthPercentage="0.5"
+                    BackgroundColor="Orange">
+            <StackLayout HeightRequest="2000">
+                <Button Text="TO RIGHT" FontSize="25" Clicked="OnLeftButtonClicked" />
+            </StackLayout>
+        </ScrollView>-->
+
+        <!--RightMenu-->
+        <!--<ScrollView side:SideMenuView.Place="RightMenu"
+                    side:SideMenuView.MenuWidthPercentage="0.6"
+                    BackgroundColor="#F58E1D">
+              <customRenderer1:GradientColor StartColor="#F58E1D" EndColor="#BF5206">
+            <StackLayout HeightRequest="900" Orientation="Vertical">
+                  <Image  Margin="-60,40,0,0" WidthRequest="70" Source="logo_white"/>
+
+                <Button Margin="-70,50,0,0" WidthRequest="10" HeightRequest="23" ImageSource="home.png" Clicked="OnHomeButtonClicked" />
+               <Button Margin="-70,30,0,0"  WidthRequest="10" HeightRequest="23" ImageSource="news.png"  Clicked="OnNewsButtonClicked" />
+                 <Button Margin="-70,30,0,0"  WidthRequest="10" HeightRequest="23" ImageSource="prices.png"  Clicked="OnPricesButtonClicked" />
+                <Button Margin="-45,30,0,0"  WidthRequest="10" HeightRequest="23" ImageSource="statistics.png"  Clicked="OnStatisticsButtonClicked" />
+               <Button Margin="-35,30,0,0"  WidthRequest="10" HeightRequest="23"  ImageSource="researchb.png" Clicked="OnResearchButtonClicked" />
+               <Button Margin="-30,30,0,0"  WidthRequest="10" HeightRequest="23"  ImageSource="about.png" Clicked="OnAboutButtonClicked" />
+                 <Button Margin="-30,30,0,0"  WidthRequest="10" HeightRequest="23" ImageSource="contact.png"  Clicked="OnContactButtonClicked" />
+               <Button Margin="-35,30,0,0"  WidthRequest="10" HeightRequest="23" ImageSource="defenitions1.png" Clicked="OnDefinitionsButtonClicked" />
+                 <Button Margin="-70,30,0,0" WidthRequest="10" HeightRequest="23"  ImageSource="settings.png" Clicked="OnSettingsButtonClicked" />
+               <Button Margin="-70,30,0,0"  WidthRequest="10" HeightRequest="23" ImageSource="help.png" Clicked="OnHelpButtonClicked" />
+                 <Button Margin="-50,30,0,0" WidthRequest="10" HeightRequest="40" ImageSource="logout_btn.png" Clicked="OnLogOutButtonClicked" />
+                <StackLayout.IsVisible>
+                        <OnPlatform x:TypeArguments="x:Boolean"
+                      iOS="True"
+                      Android="False"/>
+                </StackLayout.IsVisible>
+            </StackLayout>
+                  <StackLayout HeightRequest="900" IsVisible="{OnPlatform Android=true, iOS=false}">
+                <Image  Margin="-60,30,0,0" WidthRequest="70" Source="logo_white.jpg"/>
+
+                <Image Margin="-40,70,0,0" Source="home.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnHomeButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="-40,30,0,0" Source="news.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnNewsButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="-45,30,0,0" Source="prices.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPricesButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Margin="-15,30,0,0" Source="statistics.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnStatisticsButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="2,30,0,0" Source="researchb.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnResearchButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Margin="-0,30,0,0" Source="about.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAboutButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="0,30,0,0" Source="contact.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnContactButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="0,30,0,0" Source="defenitions1.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnDefinitionsButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="-50,30,0,0" Source="settings.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSettingsButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="-50,30,0,0" Source="help.png" WidthRequest="20" HeightRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnHelpButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Margin="0,30,0,0" Source="logout_btn.png" WidthRequest="150" HeightRequest="40">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLogOutButtonClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+
+
+
+
+
+
+            </customRenderer1:GradientColor>
+        </ScrollView>--> 
+
+    </StackLayout>
+</ContentPage>

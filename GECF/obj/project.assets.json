@@ -32,6 +32,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -2029,6 +2058,35 @@
         "runtime": {
           "lib/net6.0-android31.0/AndHUD.dll": {
             "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
           }
         }
       },
@@ -4032,6 +4090,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -6029,6 +6116,35 @@
         "runtime": {
           "lib/net6.0-android31.0/AndHUD.dll": {
             "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
           }
         }
       },
@@ -8032,6 +8148,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -10032,6 +10177,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
       "GoogleGson/2.9.1.1": {
         "type": "package",
         "compile": {
@@ -12029,6 +12203,35 @@
         "runtime": {
           "lib/net6.0-android31.0/AndHUD.dll": {
             "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.dll": {
+            "related": ".aar;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".aar;.xml"
           }
         }
       },
@@ -14035,6 +14238,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -14289,6 +14521,35 @@
         "runtime": {
           "lib/net6.0-ios15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -14549,6 +14810,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -14803,6 +15093,35 @@
         "runtime": {
           "lib/net6.0-ios15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -15063,6 +15382,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -15317,6 +15665,35 @@
         "runtime": {
           "lib/net6.0-ios15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -15577,6 +15954,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -15831,6 +16237,35 @@
         "runtime": {
           "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -16091,6 +16526,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -16345,6 +16809,35 @@
         "runtime": {
           "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -16605,6 +17098,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -16859,6 +17381,35 @@
         "runtime": {
           "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -17119,6 +17670,35 @@
           }
         }
       },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -17373,6 +17953,35 @@
         "runtime": {
           "lib/net6.0-maccatalyst15.4/BTProgressHUD.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui/6.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "6.1.0"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/6.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -17662,6 +18271,61 @@
         "lib/xamarinios10/BTProgressHUD.dll",
         "lib/xamarinios10/BTProgressHUD.pdb",
         "lib/xamarinios10/BTProgressHUD.xml"
+      ]
+    },
+    "CommunityToolkit.Maui/6.1.0": {
+      "sha512": "TB26N0SuIhGxrZXEz637LlIZoTjz6Qoc1osSm2vpw8zIj9ZiziJauXS+bN26T1ve+MXq777Gm4Il0p5rHXUKRQ==",
+      "type": "package",
+      "path": "communitytoolkit.maui/6.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
+        "communitytoolkit.maui.6.1.0.nupkg.sha512",
+        "communitytoolkit.maui.nuspec",
+        "icon.png",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.aar",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.dll",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.xml",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.dll",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.xml",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.dll",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.xml",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.dll",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.xml",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.xml",
+        "lib/net7.0/CommunityToolkit.Maui.dll",
+        "lib/net7.0/CommunityToolkit.Maui.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.Core/6.1.0": {
+      "sha512": "Sby05Q2+LscL1pRprKsqFmCw+lOhhxlpMKb3Xb5FlIiTC1tYyHvIKhDJAfoKCJpoYi/6sFb0WlQAI7oLai8ulg==",
+      "type": "package",
+      "path": "communitytoolkit.maui.core/6.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.6.1.0.nupkg.sha512",
+        "communitytoolkit.maui.core.nuspec",
+        "icon.png",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.aar",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-android33.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-ios16.1/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-maccatalyst16.1/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-tizen7.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
+        "lib/net7.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net7.0/CommunityToolkit.Maui.Core.xml"
       ]
     },
     "GoogleGson/2.9.1.1": {
@@ -20132,6 +20796,7 @@
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
       "Acr.UserDialogs >= 8.0.0",
+      "CommunityToolkit.Maui >= 6.1.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -20154,6 +20819,7 @@
     ],
     "net7.0-ios16.1": [
       "Acr.UserDialogs >= 8.0.0",
+      "CommunityToolkit.Maui >= 6.1.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -20164,6 +20830,7 @@
     ],
     "net7.0-maccatalyst16.1": [
       "Acr.UserDialogs >= 8.0.0",
+      "CommunityToolkit.Maui >= 6.1.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -20227,6 +20894,10 @@
           "Acr.UserDialogs": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[6.1.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -20357,6 +21028,10 @@
             "target": "Package",
             "version": "[8.0.0, )"
           },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[6.1.0, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[7.0.0, )",
@@ -20426,6 +21101,10 @@
           "Acr.UserDialogs": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[6.1.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",

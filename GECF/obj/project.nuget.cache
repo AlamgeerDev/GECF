@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "wQf0RcXkXX2BuLSAxGqVb/xguM3HDxgTiao0XU4d+ysKeCBbbJgnMj2MICoKjAsvbWxtEPC/csg1W2sy0VsYFQ==",
+  "dgSpecHash": "PN7mtHgZIL89QdJz1EHGKfaic9XzYPOvgL/91FiwK+VBgAMXVrMXsbpUEHr5rQSnyoYVffAcyhR3FHVymiS2oA==",
   "success": true,
   "projectFilePath": "/Users/shahrukhsaifi/GECF/GECF/GECF.csproj",
   "expectedPackageFiles": [
     "/Users/shahrukhsaifi/.nuget/packages/acr.userdialogs/8.0.0/acr.userdialogs.8.0.0.nupkg.sha512",
     "/Users/shahrukhsaifi/.nuget/packages/andhud/1.5.0/andhud.1.5.0.nupkg.sha512",
     "/Users/shahrukhsaifi/.nuget/packages/btprogresshud/1.5.0/btprogresshud.1.5.0.nupkg.sha512",
+    "/Users/shahrukhsaifi/.nuget/packages/communitytoolkit.maui/6.1.0/communitytoolkit.maui.6.1.0.nupkg.sha512",
+    "/Users/shahrukhsaifi/.nuget/packages/communitytoolkit.maui.core/6.1.0/communitytoolkit.maui.core.6.1.0.nupkg.sha512",
     "/Users/shahrukhsaifi/.nuget/packages/googlegson/2.9.1.1/googlegson.2.9.1.1.nupkg.sha512",
     "/Users/shahrukhsaifi/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/Users/shahrukhsaifi/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
