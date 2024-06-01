@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GECF.Views.InAppBrowsePage"
+             xmlns:control="clr-namespace:GECF.CustomViews"
+             xmlns:user="clr-namespace:GECF.Effects"
+             Title="InAppBrowsePage">
+    <StackLayout Orientation="Vertical" x:Name="stack" Spacing="0">
+            <BoxView HeightRequest="10" BackgroundColor="#043687"
+                     IsVisible="{OnPlatform Android=false, iOS=true}"/>
+
+        <StackLayout VerticalOptions="Start" MinimumHeightRequest="80">
+          <control:TabBar MinimumHeightRequest="90"/>   
+  </StackLayout>
+
+
+        <user:LoadingIndicator
+                                x:Name="activity_Indicator"
+                               Margin="0,90,0,0"
+                               IsLoading="True"
+                               LoadingIndicatorColor="White"
+                               TextColor="White"
+                               TextFontSize="8" />
+        
+      </StackLayout>
+</ContentPage>

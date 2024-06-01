@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GECF.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+              xmlns:local="clr-namespace:GECF.CustomRenderers"
+             Title="{Binding Title}">
+    <StackLayout Orientation="Vertical"
+                 Margin="0,50,0,0"
+                 Padding="30"
+                 Spacing="0">
+        <StackLayout.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#43AAE4"
+                          Offset="0.1" />
+                <GradientStop Color="#084895"
+                          Offset="1.0" />
+            </LinearGradientBrush>
+
+        </StackLayout.Background>
+
+              <Image HorizontalOptions="Center"
+                     WidthRequest="100"
+                     HeightRequest="100" Source="logo_whitetext"
+                     Aspect="AspectFit"
+                     IsVisible="{OnPlatform Android=true, iOS=false}"/>
+
+
+
+            <Image HorizontalOptions="Center"
+                          WidthRequest="120"
+                          Margin="0,0,0,30"
+                          HeightRequest="120"
+                          Source="logo_whitetext"
+                          IsVisible="{OnPlatform Android=false, iOS=true}"
+                          Aspect="AspectFit"/>
+
+
+        <StackLayout Orientation="Vertical" Margin="0,10,0,0" Spacing="10">  
+                    <local:BorderLessEntry x:Name="UserName" Text="{Binding UserName}"
+                           BackgroundColor="White"
+                           Placeholder="Username"
+                           PlaceholderColor="DarkGray" HeightRequest="50"   
+                           Keyboard="Email"
+                           FontFamily="museo300"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"/>  
+                    <local:BorderLessEntry
+                        x:Name="Password"
+                        Text="{Binding Password}"
+                        BackgroundColor="White"
+                        FontFamily="museo500" 
+                        Placeholder="Password"
+                        HorizontalTextAlignment="Center"
+                        PlaceholderColor="DarkGray" HeightRequest="50"   
+                        IsPassword="True"   
+                        TextColor="Black"/>
+
+
+
+                   <StackLayout  Margin="0,20,0,0" HorizontalOptions="Center"  Orientation="Horizontal">
+
+                          <Image
+                            x:Name="remeberpassimg"
+                              HeightRequest="30"
+                              VerticalOptions="Center"
+                            Source="{Binding IsRememberpass,Converter={StaticResource BoolToImageConverter}}">
+                                 <!--<Image.GestureRecognizers>
+                                      <TapGestureRecognizer Tapped="imgPwdEye_Tapped" />
+                                 </Image.GestureRecognizers>-->
+                     </Image>
+                       <Label   HeightRequest="30" FontAttributes="Bold" Padding="0,5,0,0" VerticalOptions="Center" FontFamily="museo500" Text="Remember Password?" TextColor="White" FontSize="16" />
+                       <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="imgPwdEye_Tapped" />
+                       </StackLayout.GestureRecognizers>
+                   </StackLayout>
+                             
+                </StackLayout>  
+            <Button Command="{Binding LoginCommand}"
+                    FontAttributes="Bold"
+                    FontFamily="museo500"
+                    Text="Login"
+                    TextColor="White"  
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="DarkOrange"
+                    Margin="0,10,0,0" />
+
+            <!--<Button FontAttributes="Bold" FontFamily="museo500" Text="{x:Static appResources:AppResources.login}"/>-->
+
+             <Label  Text="Reset Password"
+                     FontAttributes="Bold"
+                     Margin="0,10,0,0"
+                     HorizontalOptions="End" FontFamily="museo500" 
+                     TextColor="White" FontSize="16" >
+                 <Label.GestureRecognizers>
+                      <TapGestureRecognizer Tapped="Reset_Tapped" />
+                 </Label.GestureRecognizers>
+             </Label>
+
+        </StackLayout>
+</ContentPage>

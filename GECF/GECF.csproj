@@ -59,6 +59,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Acr.UserDialogs" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Plugin.Connectivity" Version="1.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -84,6 +85,8 @@
 	  <None Remove="Effects\" />
 	  <None Remove="Services\" />
 	  <None Remove="Utility\" />
+	  <None Remove="Platforms\iOS\DependencyServices\" />
+	  <None Remove="Platforms\Android\DependencyServices\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <InterfaceDefinition Include="Resources\GECFLaunchScreen.storyboard" />
@@ -109,6 +112,8 @@
 	  <Folder Include="Effects\" />
 	  <Folder Include="Services\" />
 	  <Folder Include="Utility\" />
+	  <Folder Include="Platforms\iOS\DependencyServices\" />
+	  <Folder Include="Platforms\Android\DependencyServices\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <EmbeddedResource Update="Resources\AppResources.resx">
@@ -120,5 +125,8 @@
 	  <Compile Update="Resources\AppResources.Designer.cs">
 	    <DependentUpon>AppResources.resx</DependentUpon>
 	  </Compile>
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+	  <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.4" />
 	</ItemGroup>
 </Project>

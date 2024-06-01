@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{BEB5F3CD-0157-4C8B-B8D9-1CFC0DF3EACA}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F513D03D-34ED-4953-831B-2C907CB54117" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/App.xaml.cs" relfile="GECF/App.xaml.cs" line="46" column="1" />
+      <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/App.xaml.cs" relfile="GECF/App.xaml.cs" line="47" column="1" />
+      <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/App.xaml.cs" relfile="GECF/App.xaml.cs" line="45" column="1" />
+      <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/Views/LoginPage.xaml.cs" relfile="GECF/Views/LoginPage.xaml.cs" line="40" column="1" />
+      <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/ViewModel/LoginPageViewModel.cs" relfile="GECF/ViewModel/LoginPageViewModel.cs" line="164" column="1" />
+      <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/ViewModel/LoginPageViewModel.cs" relfile="GECF/ViewModel/LoginPageViewModel.cs" line="170" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GECF/Interfaces/IDialogService.cs">
+    <Files>
+      <File FileName="GECF/ViewModel/BaseViewModel.cs" Line="2" Column="24" />
+      <File FileName="GECF/ViewModel/LoginViewModel.cs" Line="143" Column="10" />
+      <File FileName="GECF/Views/LoginPage.xaml" Line="79" Column="51" />
+      <File FileName="GECF/Views/LoginPage.xaml.cs" Line="12" Column="34" />
+      <File FileName="GECF/ViewModel/LoginPageViewModel.cs" Line="178" Column="53" />
+      <File FileName="GECF/Resources/AppResources.Designer.cs" Line="128" Column="35" />
+      <File FileName="GECF/Resources/AppResources.resx" Line="58" Column="12" />
+      <File FileName="GECF/App.xaml.cs" Line="47" Column="1" />
+      <File FileName="GECF/Platforms/iOS/Program.cs" Line="13" Column="1" />
+      <File FileName="GECF/Interfaces/IDialogService.cs" Line="7" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GECF" expanded="True">
+            <Node name="GECF">
+              <Node name="Dependencies" expanded="True">
+                <Node name="net7.0-android" expanded="True" />
+              </Node>
+              <Node name="Interfaces" expanded="True">
+                <Node name="IDialogService.cs" selected="True" />
+              </Node>
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+              </Node>
+              <Node name="Resources" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GECF PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F513D03D-34ED-4953-831B-2C907CB54117" />
+</Properties>

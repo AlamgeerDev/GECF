@@ -1,4 +1,6 @@
 ﻿using GECF.CustomRenderers;
+using GECF.Interfaces;
+//using GECF.Platforms.Android.DependencyServices;
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls.Compatibility.Hosting;
 using Microsoft.Maui.Hosting;
@@ -32,13 +34,24 @@ public static class MauiProgram
 #endif
 
             }));
-		
 
-#if DEBUG
-		builder.Logging.AddDebug();
+#if ANDROID
+        DependencyService.Register<IDialogService, GECF.Platforms.Android.DependencyServices.DialogServices>();
+        //builder.Services.AddSingleton<IDialogService,GECF.Platforms.Android.DependencyServices. DialogServices>();
+#elif IOS
+		DependencyService.Register<IDialogService, GECF.Platforms.iOS.DependencyServices.DialogServices>();
+
 #endif
 
-		return builder.Build();
+
+
+#if DEBUG
+        builder.Logging.AddDebug();
+#endif
+		
+
+
+        return builder.Build();
 	}
 }
 
