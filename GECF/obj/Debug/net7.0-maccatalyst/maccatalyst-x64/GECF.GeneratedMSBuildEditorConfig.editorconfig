@@ -1,0 +1,269 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GECF
+build_property.ProjectDir = /Users/shahrukhsaifi/GECF/GECF/
+
+[/Users/shahrukhsaifi/GECF/GECF/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/CustomViews/TabBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.CustomViews.TabBar.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomViews/TabBar.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomViews/TabBar.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Effects/LoadingIndicator.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Effects.LoadingIndicator.xaml
+build_metadata.AdditionalFiles.TargetPath = Effects/LoadingIndicator.xaml
+build_metadata.AdditionalFiles.RelativePath = Effects/LoadingIndicator.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AboutPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/AssetsAndInvestmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.AssetsAndInvestmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AssetsAndInvestmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AssetsAndInvestmentPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/ContactUsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.ContactUsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ContactUsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ContactUsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/DefinitionsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.DefinitionsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/DefinitionsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/DefinitionsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/EconomicsAndGeoPoliticsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.EconomicsAndGeoPoliticsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EconomicsAndGeoPoliticsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EconomicsAndGeoPoliticsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/EnvironmentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.EnvironmentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EnvironmentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EnvironmentPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/ExpertCommentariesDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.ExpertCommentariesDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ExpertCommentariesDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ExpertCommentariesDetailPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/ExpertCommentriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.ExpertCommentriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ExpertCommentriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ExpertCommentriesPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/GasMarketReportsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.GasMarketReportsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/GasMarketReportsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/GasMarketReportsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/GECFOutlooksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.GECFOutlooksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/GECFOutlooksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/GECFOutlooksPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/HelpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.HelpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/HelpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/HelpPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/HomePage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/HydrogenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.HydrogenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/HydrogenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/HydrogenPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/InAppBrowsePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.InAppBrowsePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/InAppBrowsePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/InAppBrowsePage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/InTheWorldPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.InTheWorldPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/InTheWorldPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/InTheWorldPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/LatestPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.LatestPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LatestPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LatestPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LoginPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/MacroeconomicsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.MacroeconomicsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MacroeconomicsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MacroeconomicsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/MemberCountriesIconsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.MemberCountriesIconsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MemberCountriesIconsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MemberCountriesIconsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/NewsDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.NewsDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewsDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewsDetailsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/NewsIconsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.NewsIconsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewsIconsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewsIconsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/NewsListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.NewsListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewsListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewsListPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/NonGECFCountriesListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.NonGECFCountriesListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NonGECFCountriesListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NonGECFCountriesListPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/ObserverCountriesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.ObserverCountriesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ObserverCountriesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ObserverCountriesPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/PolicyAndRegulationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.PolicyAndRegulationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PolicyAndRegulationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PolicyAndRegulationPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/PriceCommentaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.PriceCommentaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PriceCommentaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PriceCommentaryPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/PricesPage2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.PricesPage2.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PricesPage2.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PricesPage2.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/SearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.SearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SearchPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SettingsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/StatisticalReportsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.StatisticalReportsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/StatisticalReportsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/StatisticalReportsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/StatisticsIconsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.StatisticsIconsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/StatisticsIconsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/StatisticsIconsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/SupplyAndDemandNewsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.SupplyAndDemandNewsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SupplyAndDemandNewsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SupplyAndDemandNewsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/TechnologyPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.TechnologyPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TechnologyPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TechnologyPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/TodaysPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.TodaysPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TodaysPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TodaysPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/TradePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.TradePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TradePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TradePage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/TransportationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.TransportationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TransportationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TransportationPage.xaml

@@ -1,9 +1,13 @@
-﻿namespace GECF.Views;
+﻿using GECF.ViewModel;
+
+namespace GECF.Views;
 
 public partial class AboutPage : ContentPage
 {
-	public AboutPage()
+    AboutPageViewModel vm;
+    public AboutPage()
 	{
 		InitializeComponent();
-	}
+        BindingContext=vm = new AboutPageViewModel();
+    }
 }

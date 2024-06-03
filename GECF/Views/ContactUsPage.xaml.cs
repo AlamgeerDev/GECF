@@ -1,9 +1,14 @@
-﻿namespace GECF.Views;
+﻿using GECF.ViewModel;
+
+namespace GECF.Views;
 
 public partial class ContactUsPage : ContentPage
 {
-	public ContactUsPage()
+    ContactUsPageViewModel vm;
+    public ContactUsPage()
 	{
 		InitializeComponent();
-	}
+        vm = new ContactUsPageViewModel();
+        this.BindingContext = vm;
+    }
 }

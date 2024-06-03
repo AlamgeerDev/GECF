@@ -4,6 +4,11 @@
         <name>GECF</name>
     </assembly>
     <members>
+        <member name="F:GECF.CustomRenderers.DropDownPicker.SelectedBackgroundColorProperty">
+            <summary>
+            selectedBackground Color of picker item selected
+            </summary>
+        </member>
         <member name="M:GECF.Platforms.Android.DependencyServices.CloseApplication.closeApplication">
             <summary>
             Closes the application.
@@ -196,6 +201,31 @@
             <param name="tag"></param>
             <returns></returns>
         </member>
+        <member name="F:GECF.ViewModel.AssetsAndInvestmentPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.AssetsAndInvestmentPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.AssetsAndInvestmentPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.AssetsAndInvestmentPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.AssetsAndInvestmentPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
         <member name="F:GECF.ViewModel.BaseViewModel._NoInternetVisibility">
             <summary>
             no  internet bool 
@@ -223,6 +253,171 @@
             Used to Navigate browser with the specified url's
             </summary>
             <param name="url"></param>
+        </member>
+        <member name="F:GECF.ViewModel.DefinitionsPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.DefinitionsPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.DefinitionsPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.DefinitionsPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.DefinitionsPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EconomicsAndGeoPoliticsPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EconomicsAndGeoPoliticsPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EconomicsAndGeoPoliticsPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EconomicsAndGeoPoliticsPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EconomicsAndGeoPoliticsPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EnvironmentPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EnvironmentPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EnvironmentPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EnvironmentPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.EnvironmentPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.ExpertCommentariesDetailPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.ExpertCommentriesPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.ExpertCommentriesPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.ExpertCommentriesPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.ExpertCommentriesPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.ExpertCommentriesPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._selectedItem">
+            <summary>
+            Picker selection
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._selectedNumber">
+            <summary>
+            PickerIndex
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._currentSelectedItem">
+            <summary>
+            Selected Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._thickness">
+            <summary>
+            Tickness variation
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._isAndroidSpinnerButtonVisible">
+            <summary>
+            For android Spinner
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._isAndroidSpinnerVisible">
+            <summary>
+            For android Spinner
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GasMarketReportsPageViewModel._isiOSSpinnerVisible">
+            <summary>
+            For iOS Spinner
+            </summary>
         </member>
         <member name="F:GECF.ViewModel.HomePageViewModel._IsProgressBarVisible">
             <summary>
@@ -418,6 +613,21 @@
         <member name="F:GECF.ViewModel.LoginViewModel._isErrorVisible">
             <summary>
             isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.NewsDetailPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.NewsDetailPageViewModel.IncrementCommand">
+            <summary>
+            Increment Command
+            </summary>
+        </member>
+        <member name="P:GECF.ViewModel.NewsDetailPageViewModel.DecrementCommand">
+            <summary>
+            Decrement Command
             </summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">

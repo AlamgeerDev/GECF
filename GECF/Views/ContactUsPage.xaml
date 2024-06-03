@@ -1,12 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:GECF.CustomViews"
              x:Class="GECF.Views.ContactUsPage"
              Title="ContactUsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout Spacing="0">
+      <BoxView HeightRequest="10" BackgroundColor="#043687"
+               IsVisible="{OnPlatform Android=false, iOS=true}"/>
+
+        <StackLayout VerticalOptions="Start" HeightRequest="95">
+            <control:TabBar HeightRequest="100"/>
+       
+    </StackLayout>
+
+
+     <StackLayout  >
+
+        <Label TextColor="White" Margin="0,20,0,0"  FontFamily="museo500"  FontSize="20" HorizontalTextAlignment="Center"   Text="Contact Us &#x0a;  &#x0a;  &#x0a; Data and Information Service Department &#x0a; IT.Helpdesk@gecf.org" HorizontalOptions="Center"/>
+
+        <Label TextColor="White"   FontFamily="museo500"  FontSize="18" Text="P.O.Box 23753, Tornado Tower, 47th &amp; 48th Floors, West Bay, Doha" HorizontalOptions="Center" HorizontalTextAlignment="Center" Margin="15,10,15,10" />
+
+        <Label TextColor="White"   FontFamily="museo500"  FontSize="18"  Text="Contact Us at +974 4404 8419" HorizontalOptions="Center"  />
+
+         <Label TextColor="White"   FontFamily="museo500"  FontSize="18"  Text="Fax: +974 4404 8415" HorizontalOptions="Center"/>
+
+     </StackLayout>
+
+
+     
+</StackLayout>
 </ContentPage>

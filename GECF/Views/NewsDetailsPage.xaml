@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:control="clr-namespace:GECF.CustomViews"
+             x:Class="GECF.Views.NewsDetailsPage"
+             Title="NewsDetailsPage">
+    <StackLayout Orientation="Vertical" BackgroundColor="Transparent"  Spacing="0" x:Name="table">
+
+           <BoxView HeightRequest="10" BackgroundColor="#043687" IsVisible="{OnPlatform Android=false, iOS=true}"/>
+
+        <StackLayout VerticalOptions="Start" MinimumHeightRequest="80">
+                    <control:TabBar MinimumHeightRequest="90"/>
+            </StackLayout>
+
+      
+            
+      <CarouselView  HorizontalOptions="FillAndExpand" IsScrollAnimated="False" CurrentItemChangedCommandParameter="" ItemsUpdatingScrollMode="KeepItemsInView" IsSwipeEnabled="True" HorizontalScrollBarVisibility="Never" VerticalOptions="FillAndExpand" BackgroundColor="Transparent"  Margin="0,0,0,100" x:Name="carousel"
+                             Position="{Binding Position, Mode=TwoWay}" 
+                             ItemsSource="{Binding CatNewsList}">                  
+        <CarouselView.ItemTemplate>    
+            <DataTemplate>    
+              	<StackLayout >
+                
+                    <Button HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" BorderColor="DarkBlue" BorderWidth="1" Margin="20" CornerRadius="20" Text="{Binding category}" TextColor="DarkBlue" FontFamily="museo300" FontSize="18" />
+
+
+                    <Label Text="{Binding date}" FontFamily="museo300" FontSize="15" TextColor="White" Margin="20,0"/>
+
+                    <Label Text="{Binding title}" FontFamily="museo500" FontSize="17" TextColor="White" Margin="20,0"/>
+
+                    <ScrollView Orientation="Vertical"  Margin="20,0">
+
+                    <Label FontFamily="museo300" FontSize="15" Text="{Binding content}" x:Name="NewsShare" TextColor="White" />
+              
+                    </ScrollView>
+                    
+                    <ImageButton x:Name="shb" Source="export_view.png" BackgroundColor="Transparent" Clicked="shb_Clicked"  HeightRequest="35"  />
+            </StackLayout>
+
+            </DataTemplate>    
+        </CarouselView.ItemTemplate>    
+    </CarouselView>
+
+                  
+
+
+        <Grid WidthRequest="150" HeightRequest="35" ColumnSpacing="0" HorizontalOptions="CenterAndExpand" Margin="10,10,0,70">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                  <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton x:Name="dec" Source="left.png" BackgroundColor="Transparent" Clicked="Dec_Clicked" HeightRequest="35" Grid.Column="0" />
+             <ImageButton x:Name="inc" Source="right.png" BackgroundColor="Transparent"  HeightRequest="40" Clicked="Inc_Clicked" Grid.Column="1" />
+        </Grid>
+
+
+    </StackLayout>
+</ContentPage>

@@ -1,12 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:control="clr-namespace:GECF.CustomViews" xmlns:user="clr-namespace:GECF.Effects"
              x:Class="GECF.Views.DefinitionsPage"
              Title="DefinitionsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout Orientation="Vertical" BackgroundColor="Transparent"  Spacing="0" x:Name="table">
+
+           <BoxView HeightRequest="10"
+                    BackgroundColor="#043687"
+                    IsVisible="{OnPlatform Android=false, iOS=true}">
+           </BoxView>
+            <StackLayout VerticalOptions="Start" MinimumHeightRequest="80">
+                    <control:TabBar MinimumHeightRequest="90"/>
+        
+            </StackLayout>
+
+
+
+        <Label TextColor="White" Margin="0,20,0,0"  FontFamily="museo500"  FontSize="20"  Text="Definitions List" HorizontalOptions="Center"/>
+
+             <user:LoadingIndicator
+                                x:Name="activity_Indicator"
+                               Margin="0,100,0,0"
+                               IsLoading="True"
+                               IsVisible="{Binding  IsProgressVisible}"
+                               LoadingIndicatorColor="White"
+                               TextColor="White"
+                               TextFontSize="8" />
+
+           <ListView
+                Margin="0,15,0,0"
+                x:Name="CatListView"
+                IsGroupingEnabled = "true"
+                BackgroundColor="White"
+                ItemsSource="{Binding CatNewsList}"
+                IsVisible="{Binding IsListVisible}"
+               SelectionMode="None"
+                HasUnevenRows="True"  
+                SeparatorVisibility="Default">  
+              <ListView.ItemTemplate >  
+                <DataTemplate >
+                    <ViewCell>
+                      <StackLayout x:Name="StackContent">
+                          <Label  x:Name="CatListContentLebel" Text="{Binding content}" MaxLines="3" SizeChanged="OnLabelSizeChanged" FontFamily="museo500" FontSize="16" TextColor="Orange" LineBreakMode="TailTruncation" Margin="10,10,0,10"/>
+                          <Label x:Name="title_Label" Text="{Binding source}" FontFamily="museo500" FontSize="14" TextColor="#0096D7" MaxLines="2" LineBreakMode="TailTruncation" Margin="10,15,0,15"/>
+                      </StackLayout>
+                </ViewCell>
+                </DataTemplate>  
+               </ListView.ItemTemplate>  
+                <ListView.GroupHeaderTemplate>  
+                  <DataTemplate>  
+                    <ViewCell Height="45" >  
+                        <StackLayout BackgroundColor="Orange">  
+                            <Label Text="{Binding Key}"  
+                                   TextColor="White"
+                                   FontFamily="museo500"
+                                   FontSize="18"
+                                   VerticalOptions="CenterAndExpand"
+                                   VerticalTextAlignment="Center"
+                                   Margin="10,0,0,0"/>  
+                        </StackLayout>  
+                     </ViewCell>  
+                   </DataTemplate>  
+                 </ListView.GroupHeaderTemplate>  
+            </ListView>  
+
+         </StackLayout>
 </ContentPage>

@@ -92,6 +92,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.EnvironmentPage
 build_metadata.AdditionalFiles.TargetPath = Views/EnvironmentPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/EnvironmentPage.xaml
 
+[/Users/shahrukhsaifi/GECF/GECF/Views/ExpertCommentariesDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.ExpertCommentariesDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ExpertCommentariesDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ExpertCommentariesDetailPage.xaml
+
 [/Users/shahrukhsaifi/GECF/GECF/Views/ExpertCommentriesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.ExpertCommentriesPage.xaml
@@ -163,6 +169,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.MemberCountriesIconsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/MemberCountriesIconsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/MemberCountriesIconsPage.xaml
+
+[/Users/shahrukhsaifi/GECF/GECF/Views/NewsDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GECF.Views.NewsDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewsDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewsDetailsPage.xaml
 
 [/Users/shahrukhsaifi/GECF/GECF/Views/NewsIconsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -1,12 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:GECF.CustomViews" xmlns:user="clr-namespace:GECF.Effects"
              x:Class="GECF.Views.GasMarketReportsPage"
+             xmlns:local="clr-namespace:GECF.CustomRenderers"
              Title="GasMarketReportsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Orientation="Vertical" BackgroundColor="Transparent"  Spacing="0" x:Name="table">
+             <BoxView HeightRequest="10" BackgroundColor="#043687" IsVisible="{ OnPlatform Android=false, iOS=true}">
+                  </BoxView>
+             <StackLayout VerticalOptions="Start" MinimumHeightRequest="80">
+          <control:TabBar MinimumHeightRequest="90"/>   
+         </StackLayout>
+
+            <Label TextColor="White" Margin="0,15,0,0"  FontFamily="museo500"  FontSize="20"  Text="Gas Market Reports" HorizontalOptions="Center"/>
+
+            <StackLayout  Margin="0,10,0,0" BackgroundColor="Orange" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="FillAndExpand" Orientation="Horizontal" HeightRequest="65" HorizontalOptions="FillAndExpand">
+
+                   <Grid ColumnSpacing="0">
+                             <Grid.ColumnDefinitions>
+                                 <ColumnDefinition Width="1*" />
+                                   <ColumnDefinition Width="2*" />
+                             </Grid.ColumnDefinitions>
+
+                               <Label Grid.Column="0"  VerticalOptions="Center" FontFamily="museo500" HorizontalOptions="Start" LineBreakMode="TailTruncation"  FontAttributes="Bold" FontSize="20" Text="Report Type" WidthRequest="150" Margin="15,0,0,0" TextColor="White"/>
+
+                                <AbsoluteLayout Grid.Column="1" HorizontalOptions="End"  Margin="30,3" WidthRequest="170" VerticalOptions="Center">
+                                         <Button BorderWidth="2" IsVisible="{Binding IsiOSSpinnerVisible}"  BackgroundColor="Transparent" BorderColor="White" WidthRequest="190" HeightRequest="40" CornerRadius="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Command="{Binding SpinnerCommand}"/>
+                                         <Image BackgroundColor="Transparent" Source="downarrow" VerticalOptions="Center" HorizontalOptions="EndAndExpand"  Margin="150,12,20,0" WidthRequest="25" HeightRequest="25" Aspect="AspectFit"/>
+                                         <Label MaxLines="1" HeightRequest="50" VerticalOptions="Center" LineBreakMode="TailTruncation" FontFamily="museo500" WidthRequest="145" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="16" Text="{Binding CurrentSelectedItem}"  TextColor="White" Margin="15,13,0,10"/>
+                                          <local:DropDownPicker IsVisible="{Binding IsiOSSpinnerVisible}" Opacity="0.1"  BackgroundColor="Transparent" TextColor="Transparent" TitleColor="Transparent"  WidthRequest="190" HorizontalOptions="End"  HeightRequest="50" ItemsSource="{Binding ListPicker}" ItemDisplayBinding="{Binding value}"  SelectedItem="{Binding SelectedPicker}" >
+                                     
+                                          </local:DropDownPicker>
+                                         <Button BorderWidth="2" IsVisible="{Binding IsAndroidSpinnerButtonVisible}" VerticalOptions="CenterAndExpand"  BackgroundColor="Transparent" BorderColor="White" WidthRequest="190" HeightRequest="40" CornerRadius="0"  HorizontalOptions="FillAndExpand" Command="{Binding SpinnerCommand}"/>
+
+                           </AbsoluteLayout>
+                   </Grid>
+
+            </StackLayout>
+
+
+            <user:LoadingIndicator
+                                x:Name="activity_Indicator"
+                               Margin="0,90,0,0"
+                               IsLoading="True"
+                               IsVisible="{Binding  IsProgressVisible}"
+                               LoadingIndicatorColor="White"
+                               TextColor="White"
+                               TextFontSize="8" />
+
+
+            <AbsoluteLayout>
+           <ListView
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"
+                Margin="0,0,0,0"
+                x:Name="MonthlyListView"
+                BackgroundColor="White"
+                HasUnevenRows="True"
+                ItemsSource="{Binding CatNewsList}"
+                IsVisible="{Binding IsListVisible}"
+                SelectedItem="{Binding CurrentNewsItem}"
+                ItemSelected="OnItemSelected"
+                SeparatorVisibility="Default">  
+              <ListView.ItemTemplate >  
+                <DataTemplate >
+                    <ViewCell>
+
+                    <StackLayout x:Name="StackContent">
+
+                      <Label x:Name="title_Label" Text="{Binding Name}" FontFamily="museo500" FontSize="18" TextColor="Orange" MaxLines="1" LineBreakMode="TailTruncation" Margin="10,15,0,15"/>
+
+                  </StackLayout>
+
+                </ViewCell>
+
+
+                </DataTemplate>  
+               </ListView.ItemTemplate>  
+              
+            </ListView>  
+                </AbsoluteLayout>
+        </StackLayout>
+
+
+         <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="200" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" VerticalOptions="EndAndExpand" Margin="10,0,10,30" IsVisible="{Binding IsAndroidSpinnerVisible}">
+
+            <Frame CornerRadius="20" HasShadow="False" HeightRequest="200" BackgroundColor="#084895" >
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Button BackgroundColor="Orange" Command="{Binding CancelCommand}" HorizontalOptions="StartAndExpand" FontFamily="museo500" FontSize="12" Text="Cancel" TextColor="White" WidthRequest="75" HeightRequest="40" />
+                        <Button BackgroundColor="Orange" Command="{Binding OkCommand}" HorizontalOptions="EndAndExpand" FontFamily="museo500" FontSize="12" Text="OK" TextColor="White" WidthRequest="45" HeightRequest="40"/>
+                    </StackLayout>
+                     <ListView
+                         x:Name="PickerList"
+                         IsEnabled="True"
+                             HasUnevenRows="True"
+                         BackgroundColor="Transparent"
+                         SelectionMode="Single"
+                             ItemsSource="{Binding ListPicker}"
+                             SelectedItem="{Binding CurrentSelectedItem}"
+                             ItemSelected="SpinnerOnItemSelected"
+                            SeparatorVisibility="Default">  
+                              <ListView.ItemTemplate >  
+                                <DataTemplate >
+                                    <ViewCell>
+                                      <StackLayout x:Name="StackContent" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                          <Label  x:Name="title_Label" Text="{Binding value}" HorizontalOptions="FillAndExpand" FontFamily="museo500" HorizontalTextAlignment="Center" FontSize="16" TextColor="White" MaxLines="1" LineBreakMode="TailTruncation" Margin="20,15,0,5"/>
+                                      </StackLayout>
+                                </ViewCell>
+                                </DataTemplate>  
+                               </ListView.ItemTemplate>  
+                        </ListView>  
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+    </AbsoluteLayout>
 </ContentPage>
