@@ -1,12 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:control="clr-namespace:GECF.CustomViews"
              x:Class="GECF.Views.HelpPage"
              Title="HelpPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout Spacing="0">
+      <BoxView HeightRequest="10" BackgroundColor="#043687" IsVisible="{OnPlatform Android=false, iOS=true}">
+      </BoxView>
+    <StackLayout VerticalOptions="Start" HeightRequest="95">
+            <control:TabBar HeightRequest="100"/>
+       
+    </StackLayout>
+
+
+     <StackLayout>
+
+        <Label TextColor="White"   FontFamily="museo500"  FontSize="20"   Text="Help &amp; Support" HorizontalOptions="Center" Margin="20" />
+
+        <Label TextColor="White"   FontFamily="museo500"  FontSize="18" Text="If you are facing any difficulty with the mobile app, please send email us to:" HorizontalOptions="Center" Margin="5" />
+
+        <!--<Label TextColor="White"   FontFamily="museo500"  FontSize="18"  Text="{Binding SelectedItem}" HorizontalOptions="Center" Margin="5" />-->
+                         <Label TextColor="Orange"  FontFamily="museo500"  FontSize="18"  Text="IT.Helpdesk@gecf.org" HorizontalOptions="Center" Margin="5,5,5,0" >
+                              <Label.GestureRecognizers>
+                                      <TapGestureRecognizer Tapped="TapEmailGestureRecognizer_Tapped"/>
+                                  </Label.GestureRecognizers>
+                         </Label>
+         <BoxView  Color="Orange" HorizontalOptions="Center"  HeightRequest="1" WidthRequest="200"/>
+                <Label TextColor="White"   FontFamily="museo500"  FontSize="18"  Text="Contact Us at +974 4404 8419" HorizontalOptions="Center" Margin="5" />
+
+                  
+                             <Label HeightRequest="30" Text="FAQ"  Margin="0,30,5,0" FontFamily="museo500" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="24"  TextColor="White" >
+                                  <Label.GestureRecognizers>
+                                      <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                  </Label.GestureRecognizers>
+                             </Label>
+
+                             
+
+
+     </StackLayout>
+
+     
+</StackLayout>
 </ContentPage>

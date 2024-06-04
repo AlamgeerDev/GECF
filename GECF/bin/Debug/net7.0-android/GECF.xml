@@ -419,6 +419,21 @@
             For iOS Spinner
             </summary>
         </member>
+        <member name="F:GECF.ViewModel.GECFOutlooksPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GECFOutlooksPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.GECFOutlooksPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
         <member name="F:GECF.ViewModel.HomePageViewModel._IsProgressBarVisible">
             <summary>
             isf there is anty error
@@ -543,6 +558,56 @@
         <member name="P:GECF.ViewModel.HomePageViewModel.ResearchNavCommand">
             <summary>
             Research Navigation Command
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HydrogenPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HydrogenPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HydrogenPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HydrogenPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.HydrogenPageViewModel._currentNewsList">
+            <summary>
+            Current News List
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.LatestPageViewModel._IsProgressVisible">
+            <summary>
+            is there is any error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.LatestPageViewModel._IsListVisible">
+            <summary>
+            isf there is anty error
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.LatestPageViewModel._currentNewsItem">
+            <summary>
+            Current News Item
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.LatestPageViewModel._currentNewsItemPos">
+            <summary>
+            Current News Item position
+            </summary>
+        </member>
+        <member name="F:GECF.ViewModel.LatestPageViewModel._currentNewsList">
+            <summary>
+            Current News List
             </summary>
         </member>
         <member name="P:GECF.ViewModel.LoginPageViewModel.TestCommand">

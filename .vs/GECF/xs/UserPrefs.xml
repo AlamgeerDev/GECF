@@ -1,4 +1,6 @@
 ﻿<Properties StartupConfiguration="{BEB5F3CD-0157-4C8B-B8D9-1CFC0DF3EACA}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.nexus_6p_-_api_32" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/shahrukhsaifi/GECF/GECF/ViewModel/LoginPageViewModel.cs" relfile="GECF/ViewModel/LoginPageViewModel.cs" line="225" column="1" />
@@ -6,32 +8,24 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.GECF PreferredExecutionTarget="Android.nexus_6p_-_api_32" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GECF">
-            <Node name="GECF">
-              <Node name="Platforms" expanded="True">
-                <Node name="iOS" expanded="True">
-                  <Node name="DependencyServices" expanded="True" />
-                </Node>
-              </Node>
+          <Node name="GECF" expanded="True">
+            <Node name="GECF" expanded="True">
+              <Node name="CustomRenderers" expanded="True" />
               <Node name="ViewModel" expanded="True" />
-              <Node name="Views">
-                <Node name="HomePage.xaml" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="GasMarketReportsPage.xaml" expanded="True" />
               </Node>
-              <Node name="MainPage.xaml" expanded="True" />
-              <Node name="MauiProgram.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.nexus_6p_-_api_32" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GECF PreferredExecutionTarget="Android.nexus_6p_-_api_32" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.95" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
